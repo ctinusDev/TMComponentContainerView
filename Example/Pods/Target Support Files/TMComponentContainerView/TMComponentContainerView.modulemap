@@ -1,0 +1,6 @@
+framework module TMComponentContainerView {
+  umbrella header "TMComponentContainerView-umbrella.h"
+
+  export *
+  module * { export * }
+}

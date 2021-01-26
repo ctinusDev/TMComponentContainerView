@@ -38,11 +38,11 @@
 
 /* Begin PBXFileReference section */
 		0D52932E0AB88FCBB8812791 /* Pods-TMComponentContainerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMComponentContainerView_Example.debug.xcconfig"; path = "Target Support Files/Pods-TMComponentContainerView_Example/Pods-TMComponentContainerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1CD13D6DBD5CE5548ADC9CFE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1CD13D6DBD5CE5548ADC9CFE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2931BDBB135FA963DE6B809C /* Pods_TMComponentContainerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMComponentContainerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E0898FEF0020677D1DDDBD0 /* TMComponentContainerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TMComponentContainerView.podspec; path = ../TMComponentContainerView.podspec; sourceTree = "<group>"; };
+		2E0898FEF0020677D1DDDBD0 /* TMComponentContainerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TMComponentContainerView.podspec; path = ../TMComponentContainerView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3308F063860F59690F71A7FE /* Pods_TMComponentContainerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMComponentContainerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		449C78E8244415D1CF6FAE72 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		449C78E8244415D1CF6FAE72 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TMComponentContainerView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMComponentContainerView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -193,7 +193,6 @@
 				FEF4C8FB5C498718FB4ECCA1 /* Pods-TMComponentContainerView_Tests.debug.xcconfig */,
 				D1837FAECB36987C438340AE /* Pods-TMComponentContainerView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TMComponentContainerView_Example/Pods-TMComponentContainerView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
 				"${BUILT_PRODUCTS_DIR}/TMComponentContainerView/TMComponentContainerView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TMComponentContainerView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
