@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'TMComponentContainerView_Example' do
+  pod 'TMComponentContainerView', :path => '../'
+
+  target 'TMComponentContainerView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

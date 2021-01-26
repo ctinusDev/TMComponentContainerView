@@ -1,0 +1,23 @@
+PODS:
+  - KVOController (1.2.0)
+  - TMComponentContainerView (0.1.0):
+    - KVOController
+
+DEPENDENCIES:
+  - TMComponentContainerView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - KVOController
+
+EXTERNAL SOURCES:
+  TMComponentContainerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  TMComponentContainerView: 8bd7476195889dcb1281032af366c8f54b490778
+
+PODFILE CHECKSUM: 07e4714bf33987fcc6931f79f00a0316ba51ddb9
+
+COCOAPODS: 1.10.0.beta.2
